@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import AsideView from './components/layouts/AsideView.vue'
-import HeaderView from './components/layouts/HeaderView.vue'
-import NavView from './components/layouts/NavView.vue'
-import HomeProjectView from './views/HomeProjectView.vue' 
+import RegistrationView from './views/RegistrationView.vue'
 </script>
 <template>
-  <AsideView />
   <main>
-    <HeaderView />
-    <NavView />
-    <HomeProjectView />
+    <RegistrationView />
   </main>
 </template>
 <style scoped></style>
