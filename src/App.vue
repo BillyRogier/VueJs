@@ -6,4 +6,12 @@ import RegistrationView from './views/RegistrationView.vue'
     <RegistrationView />
   </main>
 </template>
+<!-- <template>
+  <AsideView />
+  <main>
+    <HeaderView />
+    <NavView />
+    <HomeProjectView />
+  </main>
+</template> -->
 <style scoped></style>
