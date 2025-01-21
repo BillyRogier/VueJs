@@ -1,15 +1,36 @@
-<template>
-  <div>
-    <ProductList :products="productList" />
-  </div>
-</template>
+<!--
+ Composition méthode
+<script lang="ts">
+import { ref } from 'vue'
 
-<script setup lang="ts">
-import ProductList from '../components/ProductList.vue'
-
-const productList = [
-  { id: 1, label: 'Carotte', description: 'De belles carottes', qte: 10 },
-  { id: 2, label: 'Pomme', description: 'Des pommes rouges', qte: 0 },
-  { id: 3, label: 'Poireau', description: 'Des poireaux frais', qte: 5 },
-]
+export default {
+  name: 'NextuViewHelloWorld',
+  props: {
+    count: {
+      type: Number,
+      default: 2,
+    },
+  },
+  setup(props) {
+    const message = ref('Bonjour tout le monde')
+    const countData = props.count
+    return {
+      message,
+      countData,
+    }
+  },
+}
 </script>
+-->
+<script lang="ts" setup>
+import { ref } from 'vue'
+const message = ref('Bonjour tout le monde')
+const props = defineProps<{
+  count: number
+}>()
+const countData = props.count
+</script>
+<template>
+  <div>{{ message }} {{ countData }}</div>
+</template>
+<style></style>
